@@ -22,4 +22,4 @@ b. Sau khi chạy lệnh "git init" thì 3 file sẽ được đưa vào working
 c. Chạy lệnh: git commit -m"init project" thì sẽ xuất hiện lỗi vì chưa có file nào đưa vào Staging Area
 d. Sau khi chạy lệnh: "git add file1" thì file1 sẽ được đưa vào staging area còn 2 file kia thì không
 e. Chạy lệnh: git commit -m”add file1” đưa file1 lên repository kèm theo thông điệp "add file1"
-f. Lỗi vì không có file nào có tên là "file"
+f. Lỗi vì không có file nào có tên là "file".
