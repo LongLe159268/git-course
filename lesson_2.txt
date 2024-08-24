@@ -1,0 +1,25 @@
+1. Giải thích các câu lệnh: git init, git add <file_name>, git add ., git
+commit -m “message”.
+
+git init: Dùng để khởi tạo một kho lưu trữ Git và đưa file vào vùng Working Directory
+git add <file_name>: đưa "<file_name>" từ Working Directory vào Staging Area
+git add .: Đưa tất cả các file trong Working Directory vào Staging Area
+git commit -m"message": Thực hiện commit đưa các file đang ở trong Staging Area lên repository kèm theo 1 thông điệp hoặc lời nhắn mô tả
+
+
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng
+vùng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt nếu bạn không chạy lệnh trên
+máy thật, mà bạn suy nghĩ trong đầu để ra được kết quả; bạn sẽ nhớ rất lâu đấy ^^):
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init
+c. Chạy lệnh: git commit -m”init project”
+d. Chạy lệnh: git add file1
+e. Chạy lệnh: git commit -m”add file1”
+f. Chạy lệnh: git add file
+
+Trả lời:
+b. Sau khi chạy lệnh "git init" thì 3 file sẽ được đưa vào working directory
+c. Chạy lệnh: git commit -m"init project" thì sẽ xuất hiện lỗi vì chưa có file nào đưa vào Staging Area
+d. Sau khi chạy lệnh: "git add file1" thì file1 sẽ được đưa vào staging area còn 2 file kia thì không
+e. Chạy lệnh: git commit -m”add file1” đưa file1 lên repository kèm theo thông điệp "add file1"
+f. Lỗi vì không có file nào có tên là "file"
