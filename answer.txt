@@ -1,2 +1,2 @@
-git config --global user.name “Long”
+git config --global user.name “K9-Long”
 git config --global user.email "longle159268@gmail.com" là câu trả lời cho câu hỏi sau: Câu lệnh để cài đặt email và name là gì?
