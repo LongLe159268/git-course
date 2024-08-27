@@ -23,3 +23,60 @@ c. Chạy lệnh: git commit -m"init project" thì sẽ xuất hiện lỗi vì 
 d. Sau khi chạy lệnh: "git add file1" thì file1 sẽ được đưa vào staging area còn 2 file kia thì không
 e. Chạy lệnh: git commit -m”add file1” đưa file1 lên repository kèm theo thông điệp "add file1"
 f. Lỗi vì không có file nào có tên là "file".
+
+
+Lan anh
+1. Giải thích các câu lệnh:
+- git init: Khởi tạo thư mục được quản lý bởi git 
+- git add <file_name>: Thêm 1 file vào vùng Staging
+- git add .: Thêm tất cả file vào vùng Staging
+- git commit -m “message”: Commit
+
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng vùng sau khi thao tác một loạt các lệnh sau:
+a. Tạo 3 file: file1, file2, file3
+- Working Directory (thư mục lesson-2) gồm 3 file:
+'file1'
+'file2'
+'file3'
+- Staging Area, Repository: Trống
+b. Chạy lệnh: git init
+- Khởi tạo 1 thư mục ẩn '.git' được quản lý bởi git
+- Working Directory: 
+'file1'
+'file2'
+'file3'
+- Staging Area, Repository: Trống
+c, Chạy lệnh: git commit -m”init project”
+Không có thay đổi nào do chưa có file nào ở Staging để commit
+- Working Directory: 
+'file1'
+'file2'
+'file3'
+- Staging Area, Repository: Trống
+d. Chạy lệnh: git add file1
+Add file 'file1' lên vùng Staging
+- Working Directory: 
+'file1'
+'file2'
+'file3'
+- Staging Area: 
+'file1'
+- Repository: Trống
+e. Chạy lệnh: git commit -m”add file1”
+Tạo một commit trong Repository với massage ”add file1”
+- Working Directory: 
+'file1'
+'file2'
+'file3'
+- Staging Area: Trống
+- Repository: 
+'file1'
+f. Chạy lệnh: git add file
+Hiển thị thông báo lỗi do không có file nào tên 'file'. Các vùng không có thay đổi nào
+- Working Directory: 
+'file1'
+'file2'
+'file3'
+- Staging Area: Trống
+- Repository: 
+'file1'
