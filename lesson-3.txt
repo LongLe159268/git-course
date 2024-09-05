@@ -1,0 +1,123 @@
+Tại repo git-course, hãy tạo file lesson-3.txt để trả lời cho các câu hỏi dưới đây:
+1. Giải thích các câu lệnh: git commit --amend, git commit --amend -m”<message>”, git restore --staged <file>, git reset HEAD~1.
+2. Hãy tưởng tượng có 1 folder lesson-3 mới được tạo. Hãy liệt kê các file theo từng
+vùng, liệt kê các commit và message tương ứng sau khi thao tác một loạt các lệnh sau
+(sẽ rất tuyệt vời nếu bạn không chạy trên máy tính thật, mà bạn chạy trong đầu, sẽ giúp
+bạn hiểu về Git rõ ràng hơn):
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init
+c. Chạy lệnh: git commit -m”init project”
+d. Chạy lệnh: git add file1
+e. Chạy lệnh: git commit -m”add file”
+f. Chạy lệnh: git add .
+g. Chạy lệnh: git restore --staged file2
+h. Chạy lệnh: git commit -m”add all files”
+i. Chạy lệnh: git reset HEAD~1
+3. Hãy tưởng tượng có 1 folder lesson-3-git mới được tạo ra. Hãy liệt kê các file theo
+từng vùng sau khi thao tác các lệnh sau:
+a. Chạy lệnh git init
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+d. Chạy lệnh: git add .
+e. Chạy lệnh: git commit -m"init project"
+
+--------------------------------------------------------------------------------------------
+
+Trả lời:
+1.  git commit --amend: Thay đổi commit message
+    - Gõ i để vào chế độ "INSERT"
+    - Sau khi sửa commit message bấm ESC
+    - Gõ ":wq"
+    git commit --amend -m”<message>”: Thay đổi commit message gần nhất không cần các câu lệnh trên
+    git restore --staged <file>: Đưa <file> từ vùng staging về working directory
+    git reset HEAD~1: Đưa 1 file từ vùng repository về working directory (Uncommit)
+2..
+a. Tạo 3 file: file1, file2, file3
+- Thư mục lesson-2 gồm 3 file:
+'file1'
+'file2'
+'file3'
+- Working Directory, Staging Area, Repository: Trống
+b. Chạy lệnh: git init
+- Working Directory: 
+'file1'
+'file2'
+'file3'
+- Staging Area, Repository: Trống
+c. Chạy lệnh: git commit -m”init project”
+- Lỗi vì chưa có file nào đc add
+d. Chạy lệnh: git add file1
+- Working Directory: 
+'file2'
+'file3'
+- Staging Area: 
+'file1'
+- Repository: Trống
+e. Chạy lệnh: git commit -m”add file”
+- Working Directory: 
+'file2'
+'file3'
+- Staging Area: Trống
+- Repository: 
+'file1'
+f. Chạy lệnh: git add .
+- Working Directory: Trống
+- Staging Area: 
+'file2'
+'file3'
+- Repository: 
+'file1'
+g. Chạy lệnh: git restore --staged file2
+- Working Directory: 
+'file2'
+- Staging Area: 
+'file3'
+- Repository: 
+'file1'
+h. Chạy lệnh: git commit -m”add all files”
+- Working Directory: 
+'file2'
+- Staging Area: Trống
+- Repository: 
+'file1'
+'file3'
+i. Chạy lệnh: git reset HEAD~1
+- Working Directory: 
+'file2'
+'file3'
+- Staging Area: Trống
+- Repository: 
+'file1'
+3..
+a. Chạy lệnh git init
+- Thư mục lesson-3-git mới được tạo ra:
+- Working Directory, Staging Area, Repository: Trống
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+- Working Directory:
+'file1.txt'
+'file2.txt'
+'oops/file3.txt.'
+- Staging Area, Repository: Trống
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+- Working Directory:
+'file1.txt'
+'file2.txt'
+'oops/file3.txt.'~
+'.gitignore':"file1.txt oops/"
+- Staging Area, Repository: Trống
+d. (C1) Chạy lệnh: git add .
+- Working Directory, Repository: Trống
+- Staging Area:
+'file1.txt'
+'file2.txt'
+'oops/file3.txt.'
+'.gitignore':"file1.txt oops/"
+e. Chạy lệnh: git commit -m"init project"
+- Working Directory, Staging Area: Trống
+- Repository:
+'file2.txt'~
+'.gitignore'
